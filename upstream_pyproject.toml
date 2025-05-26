@@ -6,13 +6,21 @@ build-backend = "setuptools.build_meta"
 packages = ["tinytroupe"]
 include-package-data = true
 
-
 [project]
-name = "tinycv"
-version = "0.1.0"
-description = "Example on TinyTroupe to make CV assess"
+name = "tinytroupe"
+version = "0.4.0"
+authors = [
+  { name="Paulo Salem", email="paulo.salem@microsoft.com" }
+]
+description = "LLM-based people simulation for design, validation and insight generation in business."
 readme = "README.md"
 requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
 dependencies = [
     "pandas", 
     "pytest", "pytest-cov",
@@ -27,6 +35,9 @@ dependencies = [
     "pydantic",
     "pypandoc" 
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/microsoft/tinytroupe"
 
 [tool.pytest.ini_options]
 pythonpath = [
